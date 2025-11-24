@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Trace - Mental Wellness Companion Application">
+    <title>Privacy Policy | Trace</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #667eea;
+            --primary-dark: #5a6fd6;
+            --secondary: #764ba2;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-page: #f3f4f6;
+            --bg-card: #ffffff;
+            --border: #e5e7eb;
+            --highlight-bg: #eff6ff;
+            --highlight-border: #3b82f6;
+            --warning-bg: #fffbeb;
+            --warning-text: #92400e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text-muted);
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* Clean, professional grey-white gradient */
+            padding: 40px 20px;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 60px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        /* Header Styling */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .app-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 2px 4px rgba(118, 75, 162, 0.2));
+        }
+
+        h1 {
+            color: var(--text-main);
+            font-size: 32px;
+            margin-bottom: 8px;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Content Styling */
+        h2 {
+            color: var(--text-main);
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            color: var(--text-main);
+            font-size: 17px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 8px;
+            font-size: 15px;
+        }
+
+        li::marker {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Badges & Boxes */
+        .last-updated {
+            display: inline-block;
+            background: var(--bg-page);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 30px;
+            border: 1px solid var(--border);
+        }
+
+        .centered-badge {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .highlight-box {
+            background: var(--highlight-bg);
+            border-left: 4px solid var(--highlight-border);
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box strong {
+            color: var(--text-main);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .warning-box {
+            background: var(--warning-bg);
+            border: 1px solid #fcd34d;
+            color: var(--warning-text);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* Footer & Links */
+        .contact-card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: #9ca3af;
+            font-size: 13px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+                background: #fff;
+            }
+            
+            .container {
+                padding: 30px 20px;
+                border-radius: 0;
+                box-shadow: none;
+                border: none;
+            }
+
+            h1 { font-size: 26px; }
+            h2 { font-size: 20px; }
+        }
+
+        /* Print Styling */
+        @media print {
+            body { background: none; color: black; }
+            .container { box-shadow: none; padding: 0; border: none; max-width: 100%; }
+            .header { border-bottom: 2px solid #000; }
+            a { text-decoration: underline; color: black; }
+            .highlight-box { border: 1px solid #ccc; border-left: 4px solid #000; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">🧠</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Trace &bull; Mental Wellness Companion</p>
+        </div>
+
+        <div class="centered-badge">
+            <div class="last-updated">
+                Last Updated: November 24, 2025
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <strong>Your Privacy is Our Priority</strong>
+            <p style="margin-bottom: 0;">Trace is designed with a "Local-First" architecture. All your personal data—including mood logs, journal entries, and wellness activities—is stored securely on your local device. We do not collect, transmit, or sell your personal information.</p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to Trace ("we," "our," or "the App"). This Privacy Policy explains how we handle your information when you use our mental wellness and mood tracking application.</p>
+        <p>We understand that mental health data is sensitive. We have built Trace to ensure that you remain the sole owner and custodian of your data.</p>
+
+        <h2>2. Information Storage</h2>
+        
+        <h3>2.1 Information Is Stored Locally</h3>
+        <p>The following information is stored <strong>only on your device</strong> and is never transmitted to our servers: We actually do not have any servers.</p>
+        <ul>
+            <li><strong>Mood Data:</strong> Ratings, emotions, and timestamps.</li>
+            <li><strong>Journal Entries:</strong> Personal notes and reflections.</li>
+            <li><strong>Wellness Activities:</strong> Records of breathing exercises and meditation.</li>
+            <li><strong>Preferences:</strong> Notification settings, themes, and reminders.</li>
+            <li><strong>Authentication:</strong> PINs or biometric tokens (stored in the device's Secure Enclave/Keystore).</li>
+            <li><strong>Analytics:</strong> Trends and statistics calculated locally on your phone.</li>
+        </ul>
+
+        <h3>2.2 Information We Do Not Collect</h3>
+        <p>To ensure your privacy, we expressly <strong>do not</strong> collect:</p>
+        <ul>
+            <li>Names, email addresses, or phone numbers.</li>
+            <li>GPS or precise location data.</li>
+            <li>Contact lists or photo libraries.</li>
+            <li>Usage data via third-party tracking scripts.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>Since data remains on your device, the App processes it locally to:</p>
+        <ul>
+            <li>Visualize your mood history and identifying patterns.</li>
+            <li>Generate personalized wellness insights.</li>
+            <li>Schedule local notifications and reminders.</li>
+            <li>Generate exportable PDF/CSV reports (initiated only by you).</li>
+        </ul>
+
+        <h2>4. Data Storage and Security</h2>
+        
+        <h3>4.1 Local Encryption</h3>
+        <p>Your data is stored in a local SQLite database protected by your device's operating system sandbox. We utilize standard OS-level security features to prevent unauthorized access by other applications.</p>
+
+        <h3>4.2 No Cloud Sync</h3>
+        <p>Trace does not automatically sync to the cloud. There is no central server containing user data, eliminating the risk of a remote mass data breach.</p>
+
+        <h3>4.3 Backups</h3>
+        <p>Your data may be included in your personal device backups (e.g., iCloud, Google Drive). This is managed by your operating system settings and is outside the control of the Trace application.</p>
+
+        <h2>5. Permissions</h2>
+        <p>We request minimal permissions to function:</p>
+        <ul>
+            <li><strong>Notifications:</strong> To send reminders (optional).</li>
+            <li><strong>Biometrics (FaceID/TouchID):</strong> To lock the app for additional privacy (optional).</li>
+        </ul>
+
+        <h2>6. Data Sharing</h2>
+        <p><strong>We do not share your data.</strong> Your data never leaves your device unless you manually use the "Export" feature to share a report with a healthcare provider or save it to your files.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>Trace is not intended for children under 13. We do not knowingly collect info from children. If you believe a child has used the app, simply uninstalling the app from their device will delete all associated data.</p>
+
+        <h2>8. User Rights</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li><strong>Access:</strong> View all history within the app.</li>
+            <li><strong>Export:</strong> Generate reports of your data.</li>
+            <li><strong>Deletion:</strong> Delete specific entries or clear all data via App Settings.</li>
+            <li><strong>Revocation:</strong> Uninstalling the app permanently removes the local database.</li>
+        </ul>
+
+        <h2>9. Contact Us</h2>
+        <div class="contact-card">
+            <p>If you have technical questions or concerns about this policy, please contact us:</p>
+            <p style="margin-top: 12px;">
+                <strong>Email:</strong> <a href="mailto:privacy@trace.com">privacy@trace.com</a><br>
+            </p>
+        </div>
+
+        <div class="warning-box">
+            <strong>Legal Disclaimer</strong><br>
+            Trace is a self-help tool. It is not a substitute for professional medical advice, diagnosis, or treatment. If you are in crisis, please contact emergency services immediately.
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Trace - Mental Wellness Companion. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
